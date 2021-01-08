@@ -1,4 +1,4 @@
-package a;
+package challenges;
 
 import static org.junit.Assert.assertTrue;
 

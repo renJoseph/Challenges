@@ -5,6 +5,11 @@ public class Solution {
         System.out.println(firstBadVersion(7));
     }
 
+    // https://leetcode.com/problems/first-bad-version/submissions/
+    // Runtime: 12 ms, faster than 98.04% of Java online submissions for First Bad
+    // Version.
+    // Memory Usage: 35.6 MB, less than 67.19% of Java online submissions for First
+    // Bad Version.
     public static boolean isBadVersion(int i) {
         boolean[] bools = { false, false, false, false, false, true, true };
         return bools[i - 1];

@@ -5,6 +5,11 @@ class Solution {
 
     }
 
+    // https://leetcode.com/problems/remove-linked-list-elements/
+    // Runtime: 1 ms, faster than 74.38% of Java online submissions for Remove
+    // Linked List Elements.
+    // Memory Usage: 40.1 MB, less than 39.90% of Java online submissions for Remove
+    // Linked List Elements.
     public ListNode removeElements(ListNode head, int val) {
         if (head == null) {
             return null;

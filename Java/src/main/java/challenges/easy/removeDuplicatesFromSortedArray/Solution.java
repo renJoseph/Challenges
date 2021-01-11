@@ -9,14 +9,19 @@ public class Solution {
         System.out.println("Length: " + i + "\n" + Arrays.toString(Arrays.copyOfRange(ints, 0, i)));
     }
 
+    // https://leetcode.com/problems/remove-duplicates-from-sorted-array/
+    // Runtime: 0 ms, faster than 100.00% of Java online submissions for Remove
+    // Duplicates from Sorted Array.
+    // Memory Usage: 40.4 MB, less than 97.76% of Java online submissions for Remove
+    // Duplicates from Sorted Array.
     public static int removeDuplicates(int[] nums) {
         if (nums.length == 0)
             return 0;
         int i = 0;
-        for (int j = 1; j < nums.length; j++) {
-            if (nums[j] != nums[i]) {
+        for (int num : nums) {
+            if (num != nums[i]) {
                 i++;
-                nums[i] = nums[j];
+                nums[i] = num;
             }
         }
         return i + 1;

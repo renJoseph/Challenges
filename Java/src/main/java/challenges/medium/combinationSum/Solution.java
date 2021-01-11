@@ -4,14 +4,17 @@ import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
 
-// Gold mine - https://leetcode.com/problems/combination-sum/discuss/16502/A-general-approach-to-backtracking-questions-in-Java-(Subsets-Permutations-Combination-Sum-Palindrome-Partitioning)
-
 public class Solution {
     public static void main(String[] args) {
         int[] nums = { 1, 2, 3, 4, 5 };
         System.out.println(combinationSum(nums, 5));
     }
 
+    // https://leetcode.com/problems/combination-sum/
+    // Runtime: 4 ms, faster than 54.24% of Java online submissions for Combination
+    // Sum.
+    // Memory Usage: 39.3 MB, less than 65.48% of Java online submissions for
+    // Combination Sum.
     public static List<List<Integer>> combinationSum(int[] nums, int target) {
         LinkedList<List<Integer>> list = new LinkedList<>();
         Arrays.sort(nums);
@@ -20,8 +23,8 @@ public class Solution {
         return list;
     }
 
-    private static void generateResults(LinkedList<List<Integer>> list, LinkedList<Integer> tempList, int[] nums, int length,
-            int remainder, int index) {
+    private static void generateResults(LinkedList<List<Integer>> list, LinkedList<Integer> tempList, int[] nums,
+            int length, int remainder, int index) {
         if (remainder < 0)
             return;
         if (remainder == 0) {
@@ -29,7 +32,7 @@ public class Solution {
         } else {
             for (int i = index; i < length; i++) {
                 tempList.addLast(nums[i]);
-                generateResults(list, tempList, nums, length, remainder - nums[i], i+1);
+                generateResults(list, tempList, nums, length, remainder - nums[i], i + 1);
                 tempList.removeLast();
             }
         }

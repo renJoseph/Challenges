@@ -9,6 +9,11 @@ public class Solution {
         System.out.println("Length: " + i + "\n" + Arrays.toString(ints));
     }
 
+    // https://leetcode.com/problems/remove-element/
+    // Runtime: 0 ms, faster than 100.00% of Java online submissions for Remove
+    // Element.
+    // Memory Usage: 37.3 MB, less than 96.31% of Java online submissions for Remove
+    // Element.
     public static int removeElement(int[] nums, int val) {
         int i = 0;
         for (int n : nums) {

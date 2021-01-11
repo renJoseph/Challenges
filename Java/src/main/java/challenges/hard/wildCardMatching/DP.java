@@ -1,6 +1,6 @@
 package challenges.hard.wildCardMatching;
 
-public class DynamicProgrammingSolution {
+public class DP {
 
     public static void main(String[] args) {
         String str = "", pat = "";

@@ -7,9 +7,9 @@ public class Solution {
     }
 
     // https://leetcode.com/problems/string-to-integer-atoi/
-    // Runtime: 2 ms, faster than 58.69% of Java online submissions for String to
+    // Runtime: 2 ms, faster than 61.21% of Java online submissions for String to
     // Integer (atoi).
-    // Memory Usage: 38.8 MB, less than 90.32% of Java online submissions for String
+    // Memory Usage: 38.7 MB, less than 95.91% of Java online submissions for String
     // to Integer (atoi).
     public static int myAtoi(String s) {
         s = s.stripLeading();

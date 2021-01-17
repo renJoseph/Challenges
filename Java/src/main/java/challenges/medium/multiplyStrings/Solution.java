@@ -7,6 +7,11 @@ public class Solution {
         System.out.println(multiply(num1, num2));
     }
 
+    // https://leetcode.com/problems/multiply-strings/
+    // Runtime: 3 ms, faster than 90.78% of Java online submissions for Multiply
+    // Strings.
+    // Memory Usage: 38.9 MB, less than 82.87% of Java online submissions for
+    // Multiply Strings.
     public static String multiply(String num1, String num2) {
         int length1 = num1.length(), length2 = num2.length();
         int[] nums = new int[length1 + length2];

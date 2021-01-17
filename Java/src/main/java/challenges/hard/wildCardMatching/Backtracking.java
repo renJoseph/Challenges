@@ -1,6 +1,10 @@
 package challenges.hard.wildCardMatching;
 
 public class Backtracking {
+    // Runtime: 2 ms, faster than 100.00% of Java online submissions for Wildcard
+    // Matching.
+    // Memory Usage: 38.9 MB, less than 96.65% of Java online submissions for
+    // Wildcard Matching.
     public boolean isMatch(String s, String p) {
         int indexS = 0, indexP = 0, backS = -1, backP = -1, lenS = s.length(), lenP = p.length();
         while (indexS < lenS) {
@@ -19,7 +23,7 @@ public class Backtracking {
                 return false;
             }
         }
-        for (;indexP < lenP;indexP++) {
+        for (; indexP < lenP; indexP++) {
             if (p.charAt(indexP) != '*') {
                 return false;
             }

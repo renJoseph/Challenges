@@ -1,4 +1,4 @@
-package challenges.medium.longestPalindromicScreen;
+package challenges.medium.longestPalindromicSubstring;
 
 public class Solution {
     public static void main(String[] args) {
